@@ -1,0 +1,33 @@
+import bb.cascades 1.0
+Container {
+preferredWidth: 768
+preferredHeight: 500
+background: Color.Black
+Container {
+    Label {
+        text: "Connecting to Server"
+        textStyle.fontSize: FontSize.PointValue
+        textStyle.fontSizeValue: 10
+        textStyle.color: Color.White
+    }
+    
+}
+Container {
+    
+background: Color.White
+Divider {
+    preferredHeight: 10
+}
+}
+Container {
+    Label {
+        multiline: true
+        text: "This process can take a few seconds, depending on your connection speed"
+        textStyle.fontSize: FontSize.PointValue
+        textStyle.fontSizeValue: 8
+        textStyle.color: Color.White
+    }
+}
+        
+}
+

@@ -1,0 +1,59 @@
+import bb.cascades 1.0
+
+Container {
+    id:dayC
+    preferredHeight: 350
+    property string date_lable;
+    property string temp_label;
+    background: Color.Black
+    layout: AbsoluteLayout {
+        
+    }
+    Container {
+        layoutProperties: AbsoluteLayoutProperties {
+            positionX: 40
+            positionY: 50
+        }
+        Label {
+            id: day_month
+            textStyle.fontSize: FontSize.PointValue
+            textStyle.color: Color.White
+            text: date_lable//"27.12 Tues"
+            textStyle.fontSizeValue: 10
+            textStyle.fontWeight: FontWeight.W500
+        }
+        
+            
+           
+       
+    
+    }
+    Container {
+        layoutProperties: AbsoluteLayoutProperties {
+            positionX: 120
+            positionY: 150
+        } 
+            
+        ImageView {
+            
+            
+            imageSource: "asset:///drawable/sun.png"
+            preferredWidth: 50
+            preferredHeight: 50
+        }
+    }
+    Container {
+        layoutProperties: AbsoluteLayoutProperties {
+            positionX: 30
+            positionY: 250
+        }
+        Label {
+            text: temp_label//"20°C    30°C"
+            textStyle.color: Color.White
+            textStyle.fontSize: FontSize.PointValue
+            textStyle.fontSizeValue: 11
+            textStyle.fontWeight: FontWeight.W500
+        }
+    }
+    
+}

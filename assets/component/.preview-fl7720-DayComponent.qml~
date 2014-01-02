@@ -1,0 +1,19 @@
+import bb.cascades 1.0
+
+Container {
+    id:dayC
+    
+    background: Color.Black
+    layout: AbsoluteLayout {
+        
+    }
+    Container {
+        layoutProperties: AbsoluteLayoutProperties {
+            
+        }
+        Label {
+            id: day_month
+            textStyle.fontSize: FontSize.PointValue
+        }
+    }
+}

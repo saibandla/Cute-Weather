@@ -1,0 +1,57 @@
+import bb.cascades 1.0
+Container {
+preferredWidth: 768
+preferredHeight: 500
+background: Color.Black
+Container {
+    topPadding: 30
+    leftPadding: 20
+    Label {
+        text: "Connecting to Server"
+        textStyle.fontSize: FontSize.PointValue
+        textStyle.fontSizeValue: 11
+        textStyle.color: Color.White
+    }
+    
+}
+Container {
+    
+topPadding: 30
+Container {
+   
+background: Color.White
+Divider {
+    preferredHeight: 10
+}
+}}
+Container {
+    topPadding: 70
+    layout: StackLayout {
+        orientation: LayoutOrientation.LeftToRight
+    }
+    ImageView {
+        imageSource:"asset:///drawable/spin.gif"
+        preferredHeight: 100
+        preferredWidth: 100 
+    }
+    Label {
+        multiline: true
+        text: "This process can take a few seconds, depending on your connection speed"
+        textStyle.fontSize: FontSize.PointValue
+        textStyle.fontSizeValue: 8
+        textStyle.color: Color.White
+    }
+}
+Container {
+    preferredHeight: 150
+    preferredWidth: 768
+    verticalAlignment: VerticalAlignment.Center
+    horizontalAlignment: HorizontalAlignment.Center
+    background: Color.White
+    Button {
+        text: "Cancel"
+    }
+}
+        
+}
+

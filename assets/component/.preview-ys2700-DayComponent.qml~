@@ -1,0 +1,37 @@
+import bb.cascades 1.0
+
+Container {
+    id:dayC
+    preferredHeight: maxHeight
+    preferredWidth: 350
+    background: Color.Black
+    layout: AbsoluteLayout {
+        
+    }
+    Container {
+        layoutProperties: AbsoluteLayoutProperties {
+            positionX: 40
+            positionY: 50
+        }
+        Label {
+            id: day_month
+            textStyle.fontSize: FontSize.PointValue
+            textStyle.color: Color.White
+            text: "27.12 Tues"
+            textStyle.fontSizeValue: 10
+            textStyle.fontWeight: FontWeight.W500
+        }
+        Container {
+            
+            topPadding: 80
+        ImageView {
+            translationX: 80
+            
+            imageSource: "asset:///drawable/sun.png"
+            preferredWidth: 50
+            preferredHeight: 50
+        }
+    }
+    }
+    
+}
